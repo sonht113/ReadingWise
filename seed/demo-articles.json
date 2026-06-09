@@ -1,0 +1,74 @@
+[
+  {
+    "title": "The History of Glass",
+    "content": "Glass is one of the most versatile materials ever created by humans. Its history stretches back over 5,000 years, with the earliest known glass objects dating to around 3500 BCE in Mesopotamia. These early artifacts were primarily beads and small decorative items, created by melting sand with other minerals in primitive kilns.\n\nThe first major breakthrough in glassmaking came around 1500 BCE, when craftsmen in Mesopotamia and Egypt developed the technique of core-forming. This involved shaping a core of clay and dung into the desired form, then wrapping molten glass around it. Once cooled, the core was removed, leaving a hollow glass vessel. This technique allowed for the production of more complex shapes, particularly small bottles and vases used for storing perfumes and oils.\n\nThe invention of glassblowing around 50 BCE in the Syrian-Palestinian region revolutionized the industry. A glassmaker could now use a hollow iron tube to gather molten glass and inflate it by blowing air through the tube. This innovation dramatically reduced production time and costs, making glass vessels accessible to ordinary people for the first time. The technique spread rapidly throughout the Roman Empire, and glass workshops were established across Europe.\n\nDuring the medieval period, Venice emerged as the center of European glassmaking. The Venetian island of Murano became particularly famous for its glass, as craftsmen there developed new techniques including cristallo, a perfectly clear glass that resembled rock crystal. The Venetian glassmakers were so valued that they were forbidden to leave the island, ensuring their secrets remained protected.\n\nIn the modern era, float glass technology, developed by Pilkington Brothers in the 1950s, transformed the architectural use of glass. This method involves floating molten glass on a bed of molten tin to create perfectly flat sheets. Today, glass is used not only in windows and containers but also in fiber optics, solar panels, and advanced electronic displays. From humble beginnings as decorative beads to the sophisticated material of the digital age, glass continues to shape human civilization.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "According to the passage, the earliest glass objects were created around",
+        "options": ["1500 BCE", "3500 BCE", "50 BCE", "the medieval period"],
+        "answer": "3500 BCE"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "The core-forming technique involved removing a clay core after the glass had cooled.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "The invention of _____ around 50 BCE made glass vessels more affordable.",
+        "options": null,
+        "answer": "glassblowing"
+      }
+    ]
+  },
+  {
+    "title": "Urban Farming",
+    "content": "Urban farming, the practice of cultivating food within cities and towns, has emerged as a significant response to the challenges of modern urban life. As the global population continues to concentrate in urban areas — the United Nations estimates that 68% of the world's population will live in cities by 2050 — the distance between food production and consumption has grown considerably. Urban agriculture seeks to bridge this gap.\n\nThe benefits of urban farming extend well beyond simply providing fresh produce. Studies have shown that urban green spaces help reduce the urban heat island effect, where cities are significantly warmer than surrounding rural areas due to heat-absorbing surfaces like concrete and asphalt. Rooftop gardens and vertical farms can lower building temperatures and reduce energy consumption for air conditioning. Furthermore, plants in urban environments absorb carbon dioxide and release oxygen, contributing to improved air quality.\n\nCommunity gardens have demonstrated particular social value. Research conducted in multiple cities has found that neighborhoods with community gardens experience lower crime rates, increased social cohesion, and improved mental health outcomes among residents. These spaces provide opportunities for physical activity, intergenerational knowledge transfer, and the preservation of cultural food traditions.\n\nFrom an economic perspective, urban farming can contribute to local economies. According to a 2018 study, urban agriculture in the United States generated approximately $100 million in annual revenue, with the sector growing steadily. While urban farms are unlikely to replace conventional agriculture entirely, they can supplement food supplies, particularly for leafy greens, herbs, and other perishable crops that benefit from being grown close to consumers.\n\nHowever, urban farming faces significant challenges. Limited space, soil contamination in former industrial areas, and high land costs in cities make it difficult for urban farms to operate at scale. Water access and zoning restrictions also present barriers. Despite these obstacles, innovations in hydroponics, aquaponics, and vertical farming are creating new possibilities for food production in urban environments.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "According to the passage, the urban heat island effect is caused by",
+        "options": ["lack of green spaces", "heat-absorbing surfaces like concrete", "air conditioning units", "population density"],
+        "answer": "heat-absorbing surfaces like concrete"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Urban farms are expected to completely replace conventional agriculture by 2050.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "matching_heading",
+        "question": "Which heading best fits the fourth paragraph?",
+        "options": ["Environmental benefits of urban farming", "Economic contributions of urban agriculture", "Social impact of community gardens", "Challenges facing urban farmers"],
+        "answer": "Economic contributions of urban agriculture"
+      }
+    ]
+  },
+  {
+    "title": "The Lost City",
+    "content": "Deep in the jungles of Central America, archaeologists have uncovered evidence of a civilization far more advanced than previously believed. The discovery of what has been called 'The Lost City' — known locally as La Ciudad Blanca or the White City — in the Mosquitia region of Honduras has challenged our understanding of pre-Columbian societies in the Americas.\n\nFor centuries, indigenous legends spoke of a white stone city hidden in the dense rainforest. Spanish conquistadors wrote about it in the 16th century, and explorers searched for it repeatedly. However, the terrain proved nearly impenetrable. The Mosquitia rainforest is one of the most remote and unexplored regions in the Western Hemisphere, with dense vegetation, dangerous wildlife, and limited access.\n\nIn 2012, a team of researchers employed a new approach to the search. Using aerial survey technology known as LiDAR (Light Detection and Ranging), which can penetrate forest canopy using laser pulses, they mapped the terrain from aircraft. The results were astonishing. Beneath the thick vegetation, the LiDAR revealed extensive architectural remains including plazas, pyramids, and a network of roads and canals spanning over 50 square kilometers.\n\nGround expeditions in 2015 confirmed the LiDAR findings. Archaeologists documented over 200 artifacts, including stone sculptures and ceremonial seats decorated with carvings of vultures, serpents, and human-animal hybrid figures. Soil analysis revealed that the city had been inhabited between 1000 and 1500 CE, contemporaneous with the Maya civilization to the north.\n\nThe discovery has raised as many questions as it has answered. Why was the city abandoned? What was its relationship to other Mesoamerican civilizations? Most intriguingly, the site appears to have been deliberately deposited in a ritual manner, with objects carefully arranged rather than scattered naturally. This suggests a planned abandonment, perhaps due to environmental factors, disease, or cultural shifts.\n\nPreservation of the site presents an ongoing challenge. The Honduran government has designated the area as a protected archaeological zone, but deforestation, illegal logging, and the lure of treasure hunters threaten the ancient remains. International conservation efforts are underway to document and protect what remains of this remarkable lost civilization.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What enabled researchers to locate the ruins in 2012?",
+        "options": ["Ground expeditions by archaeologists", "Indigenous legends and Spanish records", "LiDAR aerial survey technology", "Satellite photography of the region"],
+        "answer": "LiDAR aerial survey technology"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "The city was inhabited at the same time as the Maya civilization.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "The artifacts at the site appeared to have been _____ arranged, suggesting a planned abandonment.",
+        "options": null,
+        "answer": "ritually"
+      }
+    ]
+  }
+]
