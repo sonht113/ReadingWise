@@ -30,11 +30,11 @@ export function OAuthSection() {
     <div className="flex flex-col gap-3">
       <div className="relative">
         <div className="absolute inset-0 flex items-center">
-          <span className="w-full border-t" />
+          <span className="w-full border-t border-border" />
         </div>
-        <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-card px-2 text-muted-foreground">
-            or continue with
+        <div className="relative flex justify-center">
+          <span className="bg-card px-3 text-xs text-muted-foreground font-medium">
+            Continue with
           </span>
         </div>
       </div>
@@ -42,9 +42,9 @@ export function OAuthSection() {
         variant="outline"
         onClick={handleGoogleSignIn}
         disabled={loading}
-        className="w-full"
+        className="w-full h-11 text-sm font-medium border-2 hover:bg-accent/50 transition-all duration-200"
       >
-        <svg className="mr-2 size-4" viewBox="0 0 24 24">
+        <svg className="mr-2.5 size-5" viewBox="0 0 24 24">
           <path
             d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
             fill="#4285F4"
@@ -62,7 +62,7 @@ export function OAuthSection() {
             fill="#EA4335"
           />
         </svg>
-        {loading ? "Redirecting..." : "Sign in with Google"}
+        {loading ? "Redirecting..." : "Google"}
       </Button>
       {error && (
         <p className="text-sm text-destructive text-center">{error}</p>
