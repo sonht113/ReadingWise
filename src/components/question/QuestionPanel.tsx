@@ -7,7 +7,11 @@ import { Button } from "@/components/ui/button";
 import { MultipleChoice } from "./MultipleChoice";
 import { TrueFalseNG } from "./TrueFalseNG";
 import { MatchingHeading } from "./MatchingHeading";
+import { MatchingInfo } from "./MatchingInfo";
 import { FillInBlank } from "./FillInBlank";
+import { SummaryCompletion } from "./SummaryCompletion";
+import { ShortAnswer } from "./ShortAnswer";
+import { YesNoNG } from "./YesNoNG";
 import { ResultModal } from "./ResultModal";
 
 interface QuestionPanelProps {
@@ -120,6 +124,48 @@ export function QuestionPanel({ articleId }: QuestionPanelProps) {
               case "fill_in_blank":
                 return (
                   <FillInBlank
+                    key={q.id}
+                    question={`${i + 1}. ${q.question}`}
+                    value={value}
+                    onChange={(v) => setAnswer(q.id, v)}
+                    disabled={disabled}
+                  />
+                );
+              case "matching_info":
+                return (
+                  <MatchingInfo
+                    key={q.id}
+                    question={`${i + 1}. ${q.question}`}
+                    options={(q.options as string[]) ?? []}
+                    value={value}
+                    onChange={(v) => setAnswer(q.id, v)}
+                    disabled={disabled}
+                  />
+                );
+              case "summary_completion":
+                return (
+                  <SummaryCompletion
+                    key={q.id}
+                    question={`${i + 1}. ${q.question}`}
+                    options={(q.options as string[]) ?? []}
+                    value={value}
+                    onChange={(v) => setAnswer(q.id, v)}
+                    disabled={disabled}
+                  />
+                );
+              case "short_answer":
+                return (
+                  <ShortAnswer
+                    key={q.id}
+                    question={`${i + 1}. ${q.question}`}
+                    value={value}
+                    onChange={(v) => setAnswer(q.id, v)}
+                    disabled={disabled}
+                  />
+                );
+              case "yes_no_not_given":
+                return (
+                  <YesNoNG
                     key={q.id}
                     question={`${i + 1}. ${q.question}`}
                     value={value}
