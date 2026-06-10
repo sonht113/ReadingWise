@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Viking Navigation: Sailing Without a Compass",
+    "content": "Between the 8th and 11th centuries, Norse seafarers known as Vikings voyaged across vast stretches of the North Atlantic, reaching as far as Greenland and North America. This achievement is made all the more remarkable by the fact that they navigated without magnetic compasses, which were not introduced to Europe until the 12th century. So how did these skilled mariners find their way across thousands of kilometers of open ocean?\n\nTo begin with, Viking sailors relied heavily on careful observation of the natural world. They studied the behavior of seabirds, understanding that certain species would fly toward land at dusk. If birds were seen heading in a particular direction, the Vikings knew land lay that way. Similarly, they observed ocean swells, which maintain a consistent direction even far from shore, and could detect the presence of land by changes in wave patterns reflected off distant coastlines.\n\nPerhaps their most famous navigational tool was the sunstone, or solarsteinn. Norse sagas describe a transparent crystal that, when held up to the sky, could reveal the position of the sun even on heavily overcast days or when the sun had dipped below the horizon. Modern researchers believe this was likely a piece of Iceland spar, a form of calcite crystal that exhibits birefringence — splitting light into two beams. By rotating the crystal until the two images aligned, a navigator could determine the direction of polarized light from the sun, even when it was hidden from direct view.\n\nIn addition to these techniques, Viking navigators possessed a sophisticated understanding of latitude sailing. They memorized the sun's path at different times of the year and could estimate their north-south position by noting the height of the midday sun above the horizon. A simple wooden device called a sun compass, consisting of a circular disk with a central pin that cast a shadow, helped with this calculation. Archaeological evidence suggests these devices were calibrated for specific latitudes, indicating that Norse sailors deliberately sailed along predetermined latitudinal routes.\n\nThe Vikings also kept track of time at sea by counting the number of days sailed in a known direction. They understood seasonal wind patterns and ocean currents, timing their voyages accordingly. The prevailing winds in the North Atlantic blow from west to east in summer, facilitating the return journey from the colonies they established. Marine creatures such as whales, which follow predictable migration routes, also provided navigational cues.\n\nThe combination of these methods — celestial observation, wildlife behavior, wave patterns, and navigational instruments — formed an integrated system of wayfinding that allowed the Vikings to become arguably the most accomplished sailors of the medieval world.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does the passage say about the magnetic compass in Europe?",
+        "options": ["It was invented by the Vikings", "It was available from the 12th century", "It was never used by European sailors", "It was unreliable on the open ocean"],
+        "answer": "It was available from the 12th century"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Iceland spar crystals automatically show the sun's position without any adjustment.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Viking sun compasses were mass-produced in workshops across Scandinavia.",
+        "options": null,
+        "answer": "NOT GIVEN"
+      },
+      {
+        "type": "matching_info",
+        "question": "Using bird behavior to locate land",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F"],
+        "answer": "Paragraph A"
+      },
+      {
+        "type": "matching_info",
+        "question": "The function of a sun compass device",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F"],
+        "answer": "Paragraph C"
+      },
+      {
+        "type": "matching_info",
+        "question": "The role of seasonal factors in voyage timing",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F"],
+        "answer": "Paragraph E"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "The sunstone is believed to have been made from a type of _____ called Iceland spar.",
+        "options": null,
+        "answer": "calcite crystal"
+      }
+    ]
+  },
+  {
+    "title": "Sleep and Memory: The Brain's Nightly Filing System",
+    "content": "For centuries, sleep was viewed as a passive state — a period of inactivity during which the body and brain simply rested. Modern neuroscience has thoroughly overturned this notion. We now understand that sleep is an active, dynamic process during which the brain performs essential maintenance, and one of its most critical functions is the consolidation of memory.\n\nMemory consolidation occurs in several stages. During waking hours, the hippocampus, a seahorse-shaped structure deep in the brain, rapidly encodes new experiences and information. However, the hippocampus has limited storage capacity. During sleep, particularly during the slow-wave phase known as deep sleep, the brain replays the day's experiences. This replay transfers information from the temporary storage of the hippocampus to the more permanent storage of the neocortex, the wrinkled outer layer of the brain responsible for higher cognitive functions.\n\nDifferent sleep stages appear to serve distinct memory functions. Slow-wave sleep, which dominates the first half of the night, is primarily associated with the consolidation of declarative memories — facts, events, and knowledge that can be consciously recalled. Students who sleep after studying consistently outperform those who remain awake, and brain imaging studies show that sleep spindles, brief bursts of brain activity during slow-wave sleep, are directly correlated with improved retention of learned material.\n\nREM sleep, which occurs predominantly in the second half of the night and is characterized by rapid eye movements and vivid dreaming, appears to play a different role. Research suggests REM sleep is crucial for emotional memory processing and creative problem-solving. During REM, the brain forms novel associations between seemingly unrelated pieces of information, potentially explaining why we sometimes wake with surprising solutions to problems that had stumped us the day before. The brain's stress-related chemistry is also suppressed during REM sleep, allowing emotionally charged memories to be reprocessed in a calmer state.\n\nRecent studies have also explored the relationship between sleep and motor skill learning. Musicians, athletes, and individuals learning new physical tasks show measurable improvements after a night's sleep, particularly when the sleep includes sufficient stage 2 non-REM sleep. This stage features distinctive brainwave patterns that appear to strengthen the neural pathways involved in motor coordination.\n\nThe practical implications of this research are profound. Chronic sleep deprivation, increasingly common in modern society, disrupts all stages of the memory consolidation process. Studies have found that students who regularly sleep less than six hours per night show significantly reduced academic performance compared to their well-rested peers. Shift workers, who often suffer from disrupted circadian rhythms, demonstrate measurable deficits in both declarative and procedural memory tasks. The emerging consensus among neuroscientists is that adequate sleep is not merely beneficial for memory — it is essential.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "According to the passage, the hippocampus",
+        "options": ["is the permanent storage site for all memories", "has unlimited capacity for new information", "transfers information to the neocortex during sleep", "only functions during REM sleep"],
+        "answer": "transfers information to the neocortex during sleep"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "REM sleep occurs primarily in the first half of the night.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "summary_completion",
+        "question": "During slow-wave sleep, the brain replays experiences and transfers information from the hippocampus to the _____.",
+        "options": ["neocortex", "amygdala", "cerebellum", "hypothalamus", "brainstem", "thalamus"],
+        "answer": "neocortex"
+      },
+      {
+        "type": "summary_completion",
+        "question": "Sleep deprivation studies show that students sleeping under _____ hours per night perform worse academically.",
+        "options": ["six", "seven", "eight", "four", "five", "ten"],
+        "answer": "six"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Shift workers show deficits in both declarative and procedural memory.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "short_answer",
+        "question": "What type of brain activity during deep sleep is correlated with improved retention of learned material? (No more than 2 words)",
+        "options": null,
+        "answer": "sleep spindles"
+      }
+    ]
+  },
+  {
+    "title": "The Spice Trade: How Exotic Flavors Shaped Global History",
+    "content": "For much of human history, spices were among the most valuable commodities on Earth. Pepper, cinnamon, cloves, and nutmeg — seasonings that today sit unremarkably on kitchen shelves — once drove empires to war, funded the voyages of explorers, and fundamentally reshaped the geopolitical map of the world.\n\nThe spice trade has ancient origins. Archaeological evidence from Syria suggests that cloves, which are native only to a handful of small islands in what is now Indonesia, were being used in the Middle East as early as 1700 BCE. This indicates the existence of sophisticated maritime trade networks spanning the Indian Ocean thousands of years before European ships arrived. Arab traders dominated these routes for centuries, and their control over the source of spices — which they deliberately kept mysterious — allowed them to command enormous prices from European buyers.\n\nBy the Roman era, the appetite for Eastern spices in Europe had grown insatiable. Pepper, in particular, became a form of currency in its own right. Roman recipes that survive from the period call for pepper in quantities that would be considered excessive by modern standards, and the spice features in over 80 percent of the recipes recorded by the Roman gastronome Apicius. The trade in spices drained the Roman treasury of gold and silver, creating a trade deficit that some historians argue contributed to the empire's economic decline.\n\nThe fall of Rome did not diminish the European craving for spices. Throughout the medieval period, spices passed through a long chain of intermediaries — from Southeast Asian growers to Indian merchants to Arab traders to Venetian middlemen — with each link in the chain adding substantial markup. By the time pepper reached a European kitchen, its price had increased by as much as 500 percent from its point of origin.\n\nIt was this desire to bypass the costly intermediaries that motivated the great voyages of exploration in the 15th and 16th centuries. When the Ottoman Empire captured Constantinople in 1453, it gained control of the overland spice routes and imposed heavy taxes on trade. European powers scrambled to find alternative sea routes to the spice-producing regions. Christopher Columbus, sailing west in 1492, was searching not for a new continent but for a direct route to the spice islands of Asia. Vasco da Gama succeeded where Columbus failed, rounding the Cape of Good Hope in 1498 and establishing the first direct European sea link with India.\n\nThe Portuguese initially dominated the new spice routes, establishing fortified trading posts across the Indian Ocean. But they were soon challenged by the Dutch and the British, whose trading companies — the Dutch East India Company and the British East India Company — became among the wealthiest and most powerful corporations in history. The Dutch East India Company's monopoly on nutmeg, achieved through brutal military campaigns in the Banda Islands, enabled it to pay dividends to shareholders averaging 18 percent annually for nearly two centuries.\n\nBy the 18th century, however, the spice trade was undergoing a fundamental transformation. The transplantation of spice plants to new regions broke the geographic monopoly that had driven the trade for millennia. Today, spices are grown commercially across the tropics, and what was once a luxury reserved for the wealthiest is now accessible to almost everyone — a quiet testament to how dramatically globalization has reshaped our relationship with the world's flavors.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What does the evidence of cloves in Syria around 1700 BCE suggest?",
+        "options": ["Cloves were native to the Middle East", "Ancient trade networks existed across the Indian Ocean", "The Romans introduced cloves to Syria", "Arab traders invented clove cultivation"],
+        "answer": "Ancient trade networks existed across the Indian Ocean"
+      },
+      {
+        "type": "matching_heading",
+        "question": "Which heading best fits the third paragraph?",
+        "options": ["The Roman appetite for spices", "How pepper became a form of currency", "The economic impact of spice trade on Rome", "The fall of the Roman Empire"],
+        "answer": "The economic impact of spice trade on Rome"
+      },
+      {
+        "type": "matching_info",
+        "question": "The role companies played in controlling the spice trade",
+        "options": ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4", "Paragraph 5", "Paragraph 6"],
+        "answer": "Paragraph 6"
+      },
+      {
+        "type": "matching_info",
+        "question": "How price increases affected European consumers",
+        "options": ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4", "Paragraph 5", "Paragraph 6"],
+        "answer": "Paragraph 4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Pepper features in over _____ percent of surviving recipes by the Roman gastronome Apicius.",
+        "options": null,
+        "answer": "80"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "The transplantation of spice plants to new regions caused the spice trade to decline by the 18th century.",
+        "options": null,
+        "answer": "NOT GIVEN"
+      }
+    ]
+  },
+  {
+    "title": "The Language of Light: Bioluminescence in Nature",
+    "content": "On a moonless night in the deep ocean, a diver might witness one of nature's most mesmerizing spectacles: countless pinpricks of blue-green light, flashing and swirling like a submerged constellation. This phenomenon, known as bioluminescence — the production and emission of light by living organisms — is one of the most widespread and enigmatic adaptations in the natural world.\n\nBioluminescence is a form of chemiluminescence, where light is produced through a chemical reaction. The reaction typically involves a light-emitting molecule called luciferin and an enzyme called luciferase. In the presence of oxygen and often other co-factors such as ATP or calcium ions, luciferase catalyzes the oxidation of luciferin, creating an excited-state molecule that releases a photon when it returns to its ground state. Remarkably, this reaction is nearly 100 percent efficient, producing almost no heat — earning it the nickname 'cold light' from scientists.\n\nThis ability has evolved independently at least 40 times across the tree of life, appearing in bacteria, fungi, insects, mollusks, and fish. In the marine environment, bioluminescence is particularly prevalent. Estimates suggest that over 75 percent of organisms in the ocean's midwater zone — the vast, dark region between 200 and 1,000 meters deep — possess some form of bioluminescent capability. The near-universality of this trait in the deep sea speaks to its adaptive value in an environment where sunlight never penetrates.\n\nThe functions of bioluminescence are remarkably diverse. Predatory species use light as a lure. The anglerfish, perhaps the most famous example, dangles a glowing appendage in front of its enormous mouth to attract curious prey. Other deep-sea fish use bioluminescence for counterillumination — producing light on their undersides that matches the faint glow filtering down from the surface. This effectively erases their silhouette when viewed from below, camouflaging them against predators.\n\nSome organisms employ bioluminescence for defense. When threatened, certain squid eject clouds of luminescent ink that confuse predators, buying precious time for escape. Many species of plankton emit a bright flash when disturbed, potentially startling small predators or attracting larger ones that might prey upon the attacker — a strategy known as the 'burglar alarm' hypothesis. Certain brittle stars and sea cucumbers go further, voluntarily detaching a glowing body part that continues to flash, distracting a predator while the owner retreats.\n\nCommunication represents another major function. Fireflies use precisely timed sequences of flashes to attract mates, with different species using distinct patterns and rhythms. In the deep sea, some fish species communicate using light-producing organs called photophores, arranged in patterns unique to each species. This may help individuals identify potential mates of the same species in the vast, dark expanse.\n\nHuman applications of bioluminescence research are expanding rapidly. Bioluminescent markers are now commonly used in biomedical research to track gene expression, monitor tumor growth, and study cellular processes in real time. Scientists have engineered bioluminescent plants that glow in the dark, and researchers are exploring the possibility of bioluminescent trees that could someday replace streetlights. The study of luciferase-luciferin systems has already transformed molecular biology, forming the basis for tests that detect bacteria in food and water.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The chemical reaction producing bioluminescence is described as especially efficient because it",
+        "options": ["produces large amounts of oxygen", "generates almost no heat", "requires only luciferin to function", "occurs without any enzymes"],
+        "answer": "generates almost no heat"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Bioluminescence has evolved independently in nature more than forty times.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "summary_completion",
+        "question": "The anglerfish uses bioluminescence as a _____ to attract prey towards its large mouth.",
+        "options": ["lure", "warning", "signal", "weapon", "shield", "camouflage"],
+        "answer": "lure"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Counterillumination is a technique used exclusively by deep-sea squid.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "When some plankton emit light upon being disturbed, this strategy is known as the _____ hypothesis.",
+        "options": null,
+        "answer": "burglar alarm"
+      },
+      {
+        "type": "short_answer",
+        "question": "What are the light-producing organs found in some deep-sea fish called? (No more than 1 word)",
+        "options": null,
+        "answer": "photophores"
+      }
+    ]
+  },
+  {
+    "title": "Urban Green Spaces: Breathing Life into Concrete Jungles",
+    "content": "As the world becomes increasingly urbanized, with the United Nations projecting that 68 percent of humanity will live in cities by 2050, the importance of urban green spaces has never been greater. Parks, gardens, green roofs, and tree-lined streets are not merely aesthetic enhancements — they provide a wide range of environmental, social, and health benefits that are critical to the wellbeing of urban populations.\n\nFrom an environmental perspective, urban vegetation plays a vital role in mitigating the urban heat island effect — the phenomenon whereby cities are significantly warmer than surrounding rural areas due to heat-absorbing surfaces like concrete and asphalt. Studies in cities including London, Singapore, and Melbourne have documented temperature differences of 2 to 8 degrees Celsius between heavily vegetated areas and adjacent built-up zones. A single mature tree can provide the cooling equivalent of ten room-sized air conditioning units operating for 20 hours, largely through the process of evapotranspiration, by which plants release water vapor into the atmosphere.\n\nAir quality improvements constitute another significant benefit. Urban vegetation acts as a natural filter, trapping particulate matter — including PM2.5 and PM10 pollutants — on leaf surfaces and absorbing gaseous pollutants like nitrogen dioxide and sulfur dioxide through stomata. Research conducted in the United Kingdom estimated that urban trees remove approximately 1.3 million tonnes of air pollution annually. Tree canopies intercept rainfall, reducing stormwater runoff by 35 to 50 percent and alleviating pressure on urban drainage systems during heavy precipitation events.\n\nThe health benefits of urban green spaces extend well beyond environmental factors. A landmark study published in the Lancet medical journal in 2019, which analyzed data from nine million people across seven countries, found that individuals living within 500 meters of a green space had a 12 percent lower mortality rate compared to those living in areas with minimal greenery. Access to parks and gardens has been consistently linked to reduced rates of cardiovascular disease, type 2 diabetes, and mental health conditions including anxiety and depression.\n\nGreen spaces also foster social cohesion. Community gardens and public parks serve as gathering places where residents from diverse backgrounds interact, building the social capital that strengthens community resilience. Research in Chicago public housing found that residents living in buildings with nearby trees and green spaces reported knowing their neighbors better, feeling safer, and experiencing lower levels of aggression and violence compared to residents in identical buildings without greenery.\n\nHowever, the distribution of urban green spaces is far from equitable. Numerous studies have documented that low-income neighborhoods and communities of color consistently have less access to parks, fewer trees, and poorer-quality green spaces than their wealthier, whiter counterparts. This 'green inequality' compounds existing health disparities, as the populations who might benefit most from green spaces are those least likely to have access to them.\n\nForward-thinking cities are implementing innovative solutions to address these challenges. Singapore has mandated that new buildings incorporate greenery equivalent to the site area of the development, resulting in a landscape where skyscrapers are draped in vertical gardens. Paris has announced plans to plant 170,000 trees by 2026 and to transform schoolyards into green oases open to the public outside school hours. These approaches demonstrate that urban density and abundant greenery are not mutually exclusive — they can enhance one another.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "According to the passage, a mature tree can provide cooling equivalent to",
+        "options": ["two air conditioners operating for 10 hours", "five air conditioners operating for 20 hours", "ten air conditioners operating for 20 hours", "twenty air conditioners operating for 10 hours"],
+        "answer": "ten air conditioners operating for 20 hours"
+      },
+      {
+        "type": "matching_info",
+        "question": "The unequal distribution of parks between neighborhoods",
+        "options": ["Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G"],
+        "answer": "Paragraph F"
+      },
+      {
+        "type": "matching_info",
+        "question": "How trees help reduce flooding in cities",
+        "options": ["Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G"],
+        "answer": "Paragraph C"
+      },
+      {
+        "type": "short_answer",
+        "question": "What process involves plants releasing water vapor into the atmosphere to provide cooling? (No more than 1 word)",
+        "options": null,
+        "answer": "evapotranspiration"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "The Lancet study of 2019 analyzed data from over nine million individuals.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Singapore requires that new buildings include greenery equivalent to the _____ of the development site.",
+        "options": null,
+        "answer": "site area"
+      }
+    ]
+  },
+  {
+    "title": "Language in Danger: The Global Crisis of Linguistic Extinction",
+    "content": "Of the approximately 7,000 languages spoken in the world today, linguists estimate that between 50 and 90 percent will be extinct by the end of this century. This represents a rate of language loss unprecedented in human history — roughly one language dying every two weeks. When a language disappears, what is lost is not merely a system of sounds and grammar, but an entire repository of cultural knowledge, ecological understanding, and unique ways of perceiving the world.\n\nThe forces driving language extinction are complex and interconnected. Colonization has historically been the most devastating factor. Throughout the Americas, Australia, and parts of Africa and Asia, colonial powers suppressed indigenous languages through policies that included forced relocation, the removal of children to boarding schools where they were punished for speaking their native tongue, and legal prohibitions on language use. In Australia, for example, of the roughly 250 Aboriginal languages spoken at the time of European contact, fewer than 20 are still being learned by children today.\n\nEconomic globalization continues this pattern in subtler ways. As economies integrate, speakers of minority languages face enormous pressure to adopt dominant languages — particularly English, Mandarin, and Spanish — to access education, employment, and digital technology. Parents in many communities make the rational decision not to teach their children the ancestral language, believing that fluency in a dominant language offers better life prospects. This intergenerational transmission gap is the single most reliable predictor of language death; once children stop learning a language, its extinction within two to three generations is virtually guaranteed.\n\nThe digital realm presents a particularly acute challenge. Approximately 55 percent of web content is in English, despite English speakers constituting only about 17 percent of the global population. Only about 500 of the world's languages have any significant digital presence, meaning that speakers of the remaining 6,500 languages are effectively excluded from the information age in their native tongue. Voice recognition systems, predictive text, and other language technologies are typically available only for the world's 30 to 40 most widely spoken languages.\n\nWhat is lost when a language dies? From a scientific perspective, each language represents a unique dataset for understanding the range of human cognitive capacity. Languages encode information about the natural world that may not exist elsewhere. The Kallawaya people of Bolivia, who traditionally serve as itinerant healers, speak a language containing detailed botanical and medical knowledge not recorded in any other form. Indigenous languages of the Arctic contain elaborate vocabularies for sea ice conditions — vocabularies that encode safety-critical knowledge accumulated over millennia.\n\nFrom a cultural perspective, language extinction severs communities from their heritage and identity. Oral traditions, storytelling, songs, and ceremonial practices that depend on specific linguistic structures often cannot survive translation. Research has shown that indigenous communities with higher rates of language retention experience lower rates of youth suicide and substance abuse, suggesting a direct link between linguistic vitality and community wellbeing.\n\nEfforts to reverse language loss have yielded mixed results. The revival of Hebrew, which went from having no native speakers to become the national language of Israel with over five million speakers, remains the most dramatic success story — though the unique historical circumstances make it difficult to replicate. More commonly, revitalization efforts focus on documentation and education. Programs like the Master-Apprentice Language Learning Program in California pair fluent elders with younger learners for immersive training. Language nests in New Zealand and Hawaii immerse preschool children in Maori and Hawaiian respectively. Technology is increasingly deployed in revitalization efforts, with mobile apps and online dictionaries making endangered languages more accessible to dispersed communities. The outcome of this race between language loss and language preservation remains uncertain.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "According to the passage, the most reliable predictor of language death is",
+        "options": ["economic globalization", "the lack of digital presence", "the interruption of intergenerational transmission", "colonial policies"],
+        "answer": "the interruption of intergenerational transmission"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "There are currently approximately 7,000 languages spoken worldwide.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "summary_completion",
+        "question": "The Kallawaya language contains valuable _____ knowledge that exists in no other documented form.",
+        "options": ["botanical and medical", "agricultural", "astronomical", "historical", "architectural", "philosophical"],
+        "answer": "botanical and medical"
+      },
+      {
+        "type": "matching_info",
+        "question": "The case of Hebrew as a language revival success story",
+        "options": ["Paragraph 1", "Paragraph 2", "Paragraph 3", "Paragraph 4", "Paragraph 5", "Paragraph 6"],
+        "answer": "Paragraph 6"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Maori and Hawaiian language revival programs have fully restored both languages to community use.",
+        "options": null,
+        "answer": "NOT GIVEN"
+      },
+      {
+        "type": "short_answer",
+        "question": "What percentage of world languages have any significant digital presence? (Answer with a fraction)",
+        "options": null,
+        "answer": "500 out of 7000"
+      }
+    ]
+  },
+  {
+    "title": "The Psychology of Music: Why Our Brains Respond to Sound",
+    "content": "Music is a universal human phenomenon. Every known culture, past and present, has developed some form of music, suggesting that musicality is deeply embedded in our evolutionary heritage. Yet the question of why music exists at all — what adaptive purpose it might serve — continues to puzzle evolutionary biologists and cognitive scientists alike.\n\nOne influential theory proposes that music evolved as a mechanism for social bonding. Rhythmic synchronization — moving or vocalizing in time with others — appears to promote group cohesion and cooperative behavior. Neuroscientific studies have shown that performing music together triggers the release of oxytocin, a hormone associated with trust and social attachment. Among hunter-gatherer societies, communal music-making, often involving the entire group, remains central to rituals that reinforce community identity. This 'social cohesion hypothesis' suggests that groups who could coordinate through music had a survival advantage over those who could not.\n\nThe emotional power of music has also been extensively documented. Functional magnetic resonance imaging (fMRI) studies reveal that listening to music activates the brain's reward centers, including the nucleus accumbens and the ventral tegmental area — the same neural circuitry involved in the pleasure derived from food, sex, and addictive drugs. The anticipation and arrival of particularly moving moments in music trigger dopamine release, and the intensity of this response correlates directly with the listener's subjective experience of 'chills' or frisson.\n\nInterestingly, the brain's response to music appears to be shaped by both cultural exposure and innate predispositions. While people from different cultures may have markedly different musical preferences — Western listeners might find traditional Japanese gagaku music challenging, and vice versa — certain acoustic features appear to evoke consistent emotional responses across cultures. Studies have found that major chords are broadly perceived as 'happy' while minor chords signal 'sadness' across diverse populations, though the degree of this consistency and its basis in acoustic physics versus cultural learning remains debated.\n\nMusic's effects on cognition extend beyond emotion. The so-called 'Mozart Effect' — the claim that listening to Mozart improves spatial-temporal reasoning — generated enormous public interest when first proposed in 1993, though subsequent research has tempered the initial enthusiasm. While passive listening to music appears to have only modest, short-lived effects on cognitive performance, active musical training produces more substantial benefits. Children who receive musical instruction show enhanced verbal memory, reading ability, and executive function compared to controls. These cognitive advantages are thought to arise from the demands that music places on the brain: reading notation, coordinating fine motor movements, and processing rhythm and pitch simultaneously requires integrating activity across multiple brain regions.\n\nMusic therapy has emerged as a promising clinical application of these findings. In stroke rehabilitation, rhythm-based interventions help patients regain the ability to walk and speak by recruiting alternative neural pathways. For individuals with Parkinson's disease, rhythmic auditory stimulation can temporarily overcome motor impairments, enabling movement that is otherwise difficult to initiate. In dementia care, music from a patient's youth can reach individuals who have lost the ability to recognize family members, triggering memories and emotional responses that verbal communication cannot access. The therapeutic potential of music, it seems, is only beginning to be understood.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The 'social cohesion hypothesis' suggests that music evolved because it helped",
+        "options": ["individuals find mates", "groups coordinate and cooperate", "people express emotions privately", "leaders assert their authority"],
+        "answer": "groups coordinate and cooperate"
+      },
+      {
+        "type": "matching_heading",
+        "question": "Which heading best fits the fifth paragraph?",
+        "options": ["The Mozart Effect controversy", "How music enhances cognitive abilities", "Musical training and brain development", "The limits of music research"],
+        "answer": "How music enhances cognitive abilities"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Listening to music activates the same brain circuitry involved in pleasure from food, sex, and _____.",
+        "options": null,
+        "answer": "addictive drugs"
+      },
+      {
+        "type": "short_answer",
+        "question": "What hormone associated with trust and social attachment is released when people make music together? (No more than 1 word)",
+        "options": null,
+        "answer": "oxytocin"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Major chords are universally perceived as 'happy' across all cultures studied.",
+        "options": null,
+        "answer": "NOT GIVEN"
+      },
+      {
+        "type": "summary_completion",
+        "question": "In Parkinson's disease patients, _____ can temporarily help overcome movement difficulties.",
+        "options": ["rhythmic auditory stimulation", "passive music listening", "melodic intonation therapy", "vocal exercises", "instrumental training", "music notation reading"],
+        "answer": "rhythmic auditory stimulation"
+      }
+    ]
+  },
+  {
+    "title": "Turning Seawater into Freshwater: The Promise and Perils of Desalination",
+    "content": "Water covers more than 70 percent of the Earth's surface, yet freshwater scarcity remains one of humanity's most pressing challenges. Approximately 97 percent of the planet's water is saline, and of the remaining 3 percent that is fresh, two-thirds is locked away in glaciers and ice caps. In this context, desalination — the process of removing salt from seawater or brackish water to produce freshwater — has emerged as an increasingly significant technology.\n\nModern desalination employs two principal techniques. Thermal desalination, the older of the two, mimics the natural water cycle: seawater is heated until it evaporates, and the resulting vapor is condensed as freshwater, leaving the salt behind. This process requires substantial energy input and is predominantly used in the Middle East, where abundant fossil fuel resources and acute water scarcity combine to make it economically viable. Multi-stage flash distillation, the most common thermal method, accounts for the majority of desalinated water production in Saudi Arabia, the United Arab Emirates, and Kuwait.\n\nReverse osmosis (RO) has emerged as the dominant technology globally. In this process, seawater is forced under high pressure through semi-permeable membranes that allow water molecules to pass through while blocking dissolved salts and other impurities. Advances in membrane technology have progressively reduced the energy required for RO desalination. The energy consumption of modern RO plants has fallen to approximately 3 to 4 kilowatt-hours per cubic meter of water produced, down from over 15 kilowatt-hours in the 1970s — though this still represents a significant energy demand.\n\nThe global desalination industry has expanded dramatically in recent decades. According to the International Desalination Association, there are now more than 20,000 desalination plants operating worldwide, with a combined capacity exceeding 95 million cubic meters per day. Israel has become a global leader in the field; its Sorek plant, one of the world's largest seawater reverse osmosis facilities, produces approximately 624,000 cubic meters of freshwater daily, supplying about 20 percent of the country's municipal water needs. Singapore, Australia, and Spain have also invested heavily in desalination infrastructure.\n\nDespite its promise, desalination faces significant environmental challenges. The primary byproduct of desalination is brine — highly concentrated saltwater that remains after freshwater has been extracted. Globally, desalination plants produce approximately 142 million cubic meters of brine daily, about 50 percent more than previous estimates. Most of this brine is discharged back into the ocean, where it can damage marine ecosystems by increasing local salinity levels beyond what organisms can tolerate. Chemicals used in the pretreatment and cleaning of membranes — including chlorine, coagulants, and antiscalants — may also be present in the discharge.\n\nEnergy consumption represents another concern. Even with the efficiency gains of modern RO technology, most desalination plants remain powered by fossil fuels. If a plant were to run on coal-generated electricity, producing 1,000 cubic meters of desalinated water would result in approximately 3 to 4 tonnes of carbon dioxide emissions. The industry is increasingly looking to renewable energy sources; several solar-powered desalination plants are operational in the Middle East and Australia, though they account for a tiny fraction of global capacity.\n\nFuture innovations may address some of these limitations. Forward osmosis, which uses a 'draw' solution with a high osmotic pressure to pull water through a membrane without the need for external pressure, promises even lower energy consumption. Researchers are also exploring biomimetic membranes inspired by aquaporins — protein channels in cell membranes that transport water with remarkable efficiency. Meanwhile, efforts to extract valuable minerals from brine, including lithium and magnesium, could potentially offset the costs of disposal while providing new revenue streams. The question is not whether desalination will play a role in solving the world's water crisis — it already does — but whether technological advances can widen its application while minimizing its environmental footprint.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The main advantage of reverse osmosis over thermal desalination is",
+        "options": ["lower salt removal rates", "lower energy consumption", "faster water production", "simpler technology"],
+        "answer": "lower energy consumption"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Thermal desalination is the most common desalination method in Kuwait.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "summary_completion",
+        "question": "The daily capacity of Israel's _____ plant is approximately 624,000 cubic meters of freshwater.",
+        "options": ["Sorek", "Ashkelon", "Hadera", "Palmachim", "Eilat", "Tel Aviv"],
+        "answer": "Sorek"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Solar-powered desalination plants now account for more than 30 percent of global capacity.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "short_answer",
+        "question": "According to the passage, approximately how many desalination plants operate worldwide? (No more than 3 words)",
+        "options": null,
+        "answer": "more than 20000"
+      }
+    ]
+  },
+  {
+    "title": "The Hidden Metropolis: Inside an Ant Colony",
+    "content": "An ant colony is one of nature's most sophisticated examples of collective organization. A single colony may contain millions of individuals, yet it operates with an efficiency that human organizations can only envy. There is no central authority, no manager directing traffic, no architect drawing blueprints. Instead, order emerges from simple rules followed by individual ants, each responding to local cues. This phenomenon — known as swarm intelligence — has fascinated biologists for decades and has begun to inspire solutions in human engineering and computer science.\n\nAnt colonies are structured around a clear division of labor based on age and, in some species, physical caste. The youngest workers tend to remain deep within the nest, caring for the queen and her brood of eggs, larvae, and pupae. As they age, workers transition outward through the nest, taking on maintenance and construction tasks before graduating to foraging and defense duties at the colony's periphery. This age-based task allocation, known as temporal polyethism, ensures that the most expendable individuals — the older workers — perform the riskiest jobs.\n\nCommunication within the colony relies primarily on chemical signals called pheromones. When a foraging ant discovers a food source, it returns to the nest laying a pheromone trail. Other ants detect this trail and follow it to the food, reinforcing the pheromone path if they also find it productive. Over time, the trail becomes stronger as more ants reinforce it, creating a positive feedback loop. Conversely, once the food source is depleted, ants stop laying pheromones and the trail degrades. This simple mechanism allows the colony to dynamically allocate its foraging workforce to the most abundant food sources without any centralized decision-making.\n\nThe architectural achievements of ants are equally remarkable. Leafcutter ant colonies can excavate nests extending over 50 square meters and descending to depths of 8 meters, with intricate networks of chambers and ventilation shafts. The design of these nests is not pre-planned but emerges from individual excavation behaviors. Ants remove soil particles and deposit them elsewhere according to simple rules, and the accumulated effect of millions of such actions produces complex and functional structures. The nest's architecture actively regulates the internal environment, maintaining stable temperature and humidity despite external fluctuations.\n\nRecent research has revealed surprising cognitive capabilities in ant colonies that extend beyond simple rule-following. In laboratory experiments, colonies of Temnothorax ants, when faced with a choice between two potential nest sites, consistently select the superior option. The decision-making process resembles a democratic election: individual ants assess potential sites, and through repeated interactions — including a behavior called tandem running, where one ant physically leads another to a location — the colony gradually builds consensus. The longer the recruitment process continues for a given site, the more ants support it, and when a quorum threshold is reached, the colony commits to the decision.\n\nPerhaps most remarkably, ant colonies exhibit behaviors that resemble agriculture. Leafcutter ants do not eat the leaves they harvest; instead, they use them as a substrate to cultivate a specific fungus, which serves as their primary food source. This mutualistic relationship between ant and fungus has existed for approximately 50 million years. The ants provide the fungus with fresh vegetation and protect it from pests and pathogens, while the fungus provides the ants with nutrition. The ants even use antibiotic-producing bacteria on their bodies to suppress harmful molds that might attack their fungal gardens — a sophisticated agricultural practice that predates human farming by tens of millions of years.\n\nThe study of ant colonies continues to yield insights applicable to human challenges. Computer scientists have adapted ant colony optimization algorithms — inspired by the pheromone trail-laying behavior of ants — to solve complex routing problems, including the design of telecommunications networks and the optimization of delivery routes. Transportation engineers have used ant-inspired rules to improve traffic flow in congested urban areas. The ant colony reminds us that intelligence does not require a brain; it can emerge from the interactions of simple agents following simple rules.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "The allocation of tasks based on age in ant colonies is called",
+        "options": ["swarm intelligence", "temporal polyethism", "tandem running", "positive feedback"],
+        "answer": "temporal polyethism"
+      },
+      {
+        "type": "matching_info",
+        "question": "How ant colonies make collective decisions about nest sites",
+        "options": ["Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G"],
+        "answer": "Paragraph E"
+      },
+      {
+        "type": "matching_info",
+        "question": "An example of ant behavior that resembles human agriculture",
+        "options": ["Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G"],
+        "answer": "Paragraph F"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Ants communicate primarily through chemical signals known as _____.",
+        "options": null,
+        "answer": "pheromones"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Leafcutter ant nests are typically deeper than 10 meters.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "short_answer",
+        "question": "What type of relationship has existed between leafcutter ants and fungus for about 50 million years? (No more than 2 words)",
+        "options": null,
+        "answer": "mutualistic relationship"
+      }
+    ]
+  },
+  {
+    "title": "The Measurement of Time: From Sundials to Atomic Clocks",
+    "content": "Humanity's quest to measure time with ever-greater precision is a story that spans millennia. From the casting of shadows on sundials to the oscillation of atoms in supercooled chambers, the evolution of timekeeping reflects not only technological progress but also profound shifts in how societies organize themselves and understand the universe.\n\nThe earliest timekeeping devices emerged in ancient Egypt and Mesopotamia around 3500 BCE. Sundials, which tracked the movement of shadows cast by the sun, divided daylight into measurable segments. The Egyptians also developed water clocks, or clepsydras, in which the regulated flow of water into or out of a vessel marked the passage of hours. These devices were independent of sunlight and could operate at night and indoors. The basic principle — measuring time through the controlled flow of a substance — remained the foundation of timekeeping for over three millennia.\n\nMechanical clocks appeared in Europe during the late 13th century. The earliest surviving examples, installed in monasteries and cathedrals, were weight-driven devices regulated by a verge-and-foliot escapement mechanism. While revolutionary in concept, these early clocks were inaccurate by modern standards, drifting by as much as 15 to 30 minutes per day. Their primary function was not to track precise time for daily scheduling but to ring bells at the canonical hours, calling monks and clergy to prayer. This marked a crucial transition: communal time, announced and shared, began to replace individual, approximate time.\n\nThe pendulum clock, invented by Christiaan Huygens in 1656, represented a quantum leap in accuracy. By harnessing the regular period of a swinging pendulum — which Galileo had observed decades earlier — Huygens achieved precision of within about 15 seconds per day. Within a generation, improvements reduced the error to under one second per day. The pendulum clock made possible the precise measurement of astronomical phenomena that underpinned the Scientific Revolution, and it enabled the accurate navigation at sea that powered the age of exploration.\n\nThe demands of maritime navigation drove the next major advance. Determining longitude at sea required comparing local time, measured by the sun, with the time at a known reference point — typically the home port. This required a clock that could maintain accuracy despite the motion, temperature changes, and humidity of a sea voyage. John Harrison, a self-taught English carpenter and clockmaker, devoted over four decades to solving this problem. His marine chronometers, culminating in the H4 completed in 1759, kept time to within seconds over months at sea and revolutionized global navigation.\n\nThe 20th century ushered in the era of electronic and atomic timekeeping. Quartz clocks, which exploit the piezoelectric properties of quartz crystals — vibrating at a precise frequency when an electric current is applied — achieved accuracy of a few seconds per year and became ubiquitous in wristwatches and household appliances. Atomic clocks went further, measuring time not through mechanical movement but through the oscillation of atoms. The first practical atomic clock, built in 1955 at the UK's National Physical Laboratory, used the microwave emissions of cesium atoms. In 1967, the second was formally redefined not by astronomy but by atomic physics: the duration of 9,192,631,770 periods of the radiation corresponding to the transition between two hyperfine levels of the cesium-133 atom.\n\nToday, optical atomic clocks probe even higher frequencies, achieving precision equivalent to losing less than one second over the entire age of the universe. Such accuracy is not merely academic; it underpins the Global Positioning System (GPS), which depends on nanosecond-precision timing to triangulate positions. The story of timekeeping — from the shadow of a stick to the quantum jitter of a supercooled atom — illustrates humanity's relentless drive to measure, understand, and ultimately master the dimension that governs all experience.",
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "What innovation did Christiaan Huygens introduce to timekeeping?",
+        "options": ["The water clock", "The pendulum clock", "The atomic clock", "The quartz clock"],
+        "answer": "The pendulum clock"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "Early mechanical clocks in the 13th century could maintain accuracy within one minute per day.",
+        "options": null,
+        "answer": "FALSE"
+      },
+      {
+        "type": "matching_heading",
+        "question": "Which heading best fits the fifth paragraph?",
+        "options": ["The invention of the pendulum clock", "How navigation drove clock development", "John Harrison's life story", "The Scientific Revolution"],
+        "answer": "How navigation drove clock development"
+      },
+      {
+        "type": "summary_completion",
+        "question": "The Harison H4 marine chronometer, completed in _____, achieved accuracy within seconds on long sea voyages.",
+        "options": ["1759", "1656", "1700", "1820", "1665", "1799"],
+        "answer": "1759"
+      },
+      {
+        "type": "true_false_not_given",
+        "question": "The GPS system requires nanosecond-precision timing to function accurately.",
+        "options": null,
+        "answer": "TRUE"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "In 1967, the second was redefined based on the radiation of the _____ atom.",
+        "options": null,
+        "answer": "cesium-133"
+      }
+    ]
+  }
+]

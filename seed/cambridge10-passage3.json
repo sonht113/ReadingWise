@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Passage 3",
+    "content": "A In the early days of mountaineering, questions of safety, standards of practice, and environmental impact were not widely considered. The sport gained traction following the successful 1786 ascent of Mont Blanc, the highest peak in Western Europe, by two French mountaineers, Jacques Balmat and Michel-Gabriel Paccard. This event established the beginning of modern mountaineering, but the sole consideration over the next hundred years was the success or failure of climbers in reaching the summit and claiming the prestige of having made the first ascent.\n\nB Toward the end of the nineteenth century, however, developments in technology spurred debate regarding climbing practices. Of particular concern in this era was the introduction of pitons (metal spikes that climbers hammer into the rock face for leverage) and the use of belaying techniques. A few, such as Italian climber Guido Ray, supported these methods as ways to render climbing less burdensome and more 'acrobatic'. Others felt that they were only of value as a safety net if all else failed. Austrian Paul Preuss went so far as to eschew all artificial aids, scaling astonishing heights using only his shoes and his bare hands. Albert Mummery, a well known British mountaineer and author who climbed the European Alps, and, more famously, the Himalayas, where he died at the age of 39 attempting a notoriously difficult ascent, developed the notion of 'fair means' as a kind of informal protocol by which the use of 'walk-through' guidebooks and equipment such as ladders and grappling hooks were discouraged.\n\nC By the 1940s, bolts had begun to replace pitons as the climber's choice of equipment, and criticism surrounding their use was no less fierce. In 1948, when two American climbers scaled Mount Brussels in the Canadian Rockies using a small number of pitons and bolts, climber Frank Smythe wrote of their efforts: 'I still regard Mount Brussels as unclimbed, and my feelings are no different from those I should have were I to hear that a helicopter had deposited its passenger on the summit of that mountain just so that he could boast that he had trodden an untrodden mountain top.'\n\nD Climbing purists aside, it was not until the 1970s that the general tide began to turn against bolting and pitons. The USA, and much of the western world, was waking up to the damage it had been causing to the planet, and environmentalist campaigns and new government policies were becoming widespread. This new awareness and sensitivity to environmental issues spilled over into the rock climbing community. As a result, a stripped-down style of rock climbing known as 'clean climbing' became widely adopted. Clean climbing helped preserve rock faces and, compared with older approaches, it was much simpler to practise. This was partly due to the hallmark of clean climbing – the use of nuts – which were favoured over bolts because they could be placed into the rock wall with one hand while climbers maintained their grip on the rock with the other.\n\nE Not everyone embraced the clean climbing movement, however. A decade later, debates over two more developments were erupting. The first related to the practice of chipping, in which climbers chip away pieces of rock in order to create tiny cracks in which to insert their fingers. The other major point of contention was a process that involves setting bolts in reverse from the top of the climb down. Rappel bolting makes almost any rock face climbable with relative ease, and as a result of this new technique, the sport has lost much of its risk factor and sense of pioneering spirit; indeed, it has become more about muscle power and technical mastery than a psychological trial of fearlessness under pressure. Because of this shift in focus, many amateur climbers have flocked to indoor climbing gyms, where the risk of serious harm is negligible.\n\nF Given the environmental damage rock climbing can cause, this may be a positive outcome. It is ironic that most rock climbers and mountaineers love the outdoors and have great respect for the majesty of nature and the impressive challenges she poses, but that in the pursuit of their goals they inevitably trample sensitive vegetation, damaging and disturbing delicate flora and lichens which grow on ledges and cliff faces. Two researchers from a Canadian university, Doug Larson and Michelle McMillan, have found that rock faces that are regularly climbed have lost up to 80% of the coverage and diversity of native plant species. If that were not bad enough, non-native species have also been inadvertently introduced, having been carried in on climbers' boots.\n\nG This leaves rock climbing with an uncertain future. Climbers are not the only user group that wishes to enjoy the wilderness – hikers, mountain bikers and horseback riders visit the same areas, and more importantly, they are much better organised, with long-established lobby groups protecting their interests. With increased pressure on limited natural resources, it has been suggested that climbers put aside their differences over the ethics of various climbing techniques, and focus on the effect of their practices on the environment and their relationship with other users and landowners.\n\nH In any event, there can be no doubt that the era of the rock climber as a lone wolf or intrepid pioneer is over. Like many other forms of recreation, rock climbing has increasingly come under the fold of institutional efforts to curb dangerous behaviour and properly manage our natural environments. This may have spoiled the magic, but it has also made the sport safer and more sustainable, and governing bodies would do well to consider heightening such efforts in the future.",
+    "questions": [
+      {
+        "type": "matching_info",
+        "question": "Examples of the impact of climbers on eco systems",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph F"
+      },
+      {
+        "type": "matching_info",
+        "question": "An account of how politics affected rock climbing",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph D"
+      },
+      {
+        "type": "matching_info",
+        "question": "A less dangerous alternative to climbing rock faces",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph E"
+      },
+      {
+        "type": "matching_info",
+        "question": "A recommendation for better regulation",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph H"
+      },
+      {
+        "type": "matching_info",
+        "question": "A reference to a climber who did not use any tools or ropes for assistance",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph B"
+      },
+      {
+        "type": "matching_info",
+        "question": "Examples of different types of people who use the outdoors for recreation",
+        "options": ["Paragraph A", "Paragraph B", "Paragraph C", "Paragraph D", "Paragraph E", "Paragraph F", "Paragraph G", "Paragraph H"],
+        "answer": "Paragraph G"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Some climbers discuss whether pitons and ropes should only be considered ___.",
+        "options": null,
+        "answer": "a safety net"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "___ calls for guidelines based on unwritten rules which discourage climbing aids.",
+        "options": null,
+        "answer": "Albert Mummery"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Frank Smythe says that Mt Brussels is effectively ___ because of the techniques that were used in order to scale the mountain.",
+        "options": null,
+        "answer": "unclimbed"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "___ is more environmentally friendly.",
+        "options": null,
+        "answer": "clean climbing"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "___ are introduced as a climbing aid.",
+        "options": null,
+        "answer": "nuts"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Climbers discuss the merits of new techniques for making hand holds, and also of ___.",
+        "options": null,
+        "answer": "rappel bolting"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Many say that climbing is now a test of physical strength and ___, rather than of courage.",
+        "options": null,
+        "answer": "technical mastery"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Choose the most appropriate title for the reading passage.",
+        "options": [
+          "A history of rock climbing",
+          "Ethics and issues in rock climbing",
+          "Current trends in rock climbing",
+          "Sport climbers versus traditional climbers"
+        ],
+        "answer": "Ethics and issues in rock climbing"
+      }
+    ]
+  }
+]
