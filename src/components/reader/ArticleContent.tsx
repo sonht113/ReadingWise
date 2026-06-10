@@ -104,12 +104,11 @@ export function ArticleContent() {
   const modeOptions: { value: ReadingMode; label: string }[] = [
     { value: "original", label: "Original" },
     { value: "side_by_side", label: "Side by Side" },
-    { value: "interleave", label: "Interleave" },
   ];
 
   return (
     <div className="flex-1 overflow-y-auto">
-      <article className="max-w-3xl mx-auto py-8 px-6">
+      <article className="max-w-5xl mx-auto py-8 px-6">
         <h1 className="text-2xl font-semibold mb-4">{article.title}</h1>
 
         {hasTranslation && (
@@ -130,7 +129,7 @@ export function ArticleContent() {
           </div>
         )}
 
-        <div ref={containerRef}>
+        <div ref={containerRef} className="select-text">
           {hasTranslation ? (
             <BilingualArticleContent
               articleId={activeTabId}

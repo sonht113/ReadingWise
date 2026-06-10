@@ -38,9 +38,8 @@ export function BilingualArticleContent({
     );
   }
 
-  if (mode === "side_by_side") {
-    return (
-      <div className="grid grid-cols-2 gap-6">
+  return (
+    <div className="grid grid-cols-2 gap-6 select-text">
         <div className="text-base leading-relaxed whitespace-pre-line select-text border-r pr-4">
           <AnnotationLayer
             articleId={articleId}
@@ -50,36 +49,9 @@ export function BilingualArticleContent({
             onClick={onClick}
           />
         </div>
-        <div className="text-base leading-relaxed whitespace-pre-line text-muted-foreground">
+        <div className="text-base leading-relaxed whitespace-pre-line text-muted-foreground select-text">
           {article.translatedContent}
         </div>
       </div>
-    );
-  }
-
-  const enParagraphs = article.content.split(/\n\n+/);
-  const viParagraphs = (article.translatedContent ?? "").split(/\n\n+/);
-
-  return (
-    <div className="space-y-4">
-      {enParagraphs.map((enPara, i) => (
-        <div key={i} className="space-y-2">
-          <div className="text-base leading-relaxed whitespace-pre-line select-text">
-            <AnnotationLayer
-              articleId={articleId}
-              content={enPara}
-              onHover={onHover}
-              onLeave={onLeave}
-              onClick={onClick}
-            />
-          </div>
-          {viParagraphs[i] && (
-            <div className="text-base leading-relaxed whitespace-pre-line text-muted-foreground pl-4 border-l-2 border-muted">
-              {viParagraphs[i]}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
   );
 }

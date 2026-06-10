@@ -39,7 +39,7 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
   };
 
   return (
-    <aside className="w-64 border-r bg-sidebar flex flex-col shrink-0 h-full">
+    <aside className="w-84 border-r bg-sidebar flex flex-col shrink-0 h-full">
       <div className="p-3 border-b flex items-center justify-between">
         <h2 className="text-sm font-semibold text-sidebar-foreground">
           Collections
@@ -52,31 +52,31 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
         {collections?.map((collection) => (
           <div key={collection.id}>
             <div className="flex items-center group">
-            <button
-              onClick={() =>
-                setExpandedId(
-                  expandedId === collection.id ? null : collection.id,
-                )
-              }
-              className={`text-left px-2 py-1.5 rounded text-sm hover:bg-accent transition-colors flex-1 ${
-                expandedId === collection.id ? "bg-accent" : ""
-              }`}
-            >
-              {collection.name}
-            </button>
-            <button
-              onClick={() =>
-                setDeleteTarget({
-                  type: "collection",
-                  id: collection.id,
-                  name: collection.name,
-                })
-              }
-              className="p-1 rounded text-muted-foreground hover:text-destructive hover:bg-destructive/10 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-              title="Delete collection"
-            >
-              <Trash2 className="size-3.5" />
-            </button>
+              <button
+                onClick={() =>
+                  setExpandedId(
+                    expandedId === collection.id ? null : collection.id,
+                  )
+                }
+                className={`text-left px-2 py-1.5 rounded text-sm hover:bg-accent transition-colors flex-1 ${
+                  expandedId === collection.id ? "bg-accent" : ""
+                }`}
+              >
+                {collection.name}
+              </button>
+              <button
+                onClick={() =>
+                  setDeleteTarget({
+                    type: "collection",
+                    id: collection.id,
+                    name: collection.name,
+                  })
+                }
+                className="p-1 rounded text-muted-foreground hover:text-destructive hover:bg-destructive/10 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                title="Delete collection"
+              >
+                <Trash2 className="size-3.5" />
+              </button>
             </div>
             {expandedId === collection.id && (
               <div className="ml-3 mt-0.5 flex flex-col gap-0.5">
@@ -131,10 +131,7 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
           <Globe className="mr-2 size-3.5" />
           Import URL
         </Button>
-        <ImportDialog
-          open={importOpen}
-          onOpenChange={setImportOpen}
-        />
+        <ImportDialog open={importOpen} onOpenChange={setImportOpen} />
         <div className="flex items-center justify-between">
           <ThemeToggle />
           {user && (
@@ -174,9 +171,7 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
             ? `Are you sure you want to delete "${deleteTarget?.name}" and all its articles? This action cannot be undone.`
             : `Are you sure you want to delete "${deleteTarget?.name}"? This action cannot be undone.`
         }
-        isPending={
-          deleteCollection.isPending || deleteArticle.isPending
-        }
+        isPending={deleteCollection.isPending || deleteArticle.isPending}
       />
     </aside>
   );

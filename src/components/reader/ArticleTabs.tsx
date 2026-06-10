@@ -1,42 +1,101 @@
 "use client";
 
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { useReaderStore } from "@/stores/reader-store";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import { Sidebar } from "@/components/layout/Sidebar";
 
 export function ArticleTabs() {
   const { openTabs, activeTabId, setActiveTab, closeTab } = useReaderStore();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   if (openTabs.length === 0) {
-    return null;
+    return (
+      <header className="flex items-center gap-2 border-b bg-background shrink-0 h-11 px-3 shadow-sm">
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          className="lg:hidden -ml-1"
+          onClick={() => setSidebarOpen(true)}
+        >
+          <Menu className="size-4" />
+        </Button>
+        <span className="text-sm font-semibold text-muted-foreground select-none">
+          ReadingWise
+        </span>
+        <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
+          <SheetContent side="left" className="w-64 p-0">
+            <SheetTitle className="sr-only">Navigation</SheetTitle>
+            <Sidebar onArticleClick={() => setSidebarOpen(false)} />
+          </SheetContent>
+        </Sheet>
+      </header>
+    );
   }
 
   return (
-    <div className="flex border-b bg-muted/30 shrink-0 overflow-x-auto">
-      {openTabs.map((tab) => (
-        <div
-          key={tab.articleId}
-          className={`group flex items-center border-r border-border shrink-0 ${
-            tab.articleId === activeTabId
-              ? "bg-background border-b-2 border-b-primary -mb-px"
-              : "hover:bg-accent/50"
-          }`}
-        >
-          <button
-            onClick={() => setActiveTab(tab.articleId)}
-            className="px-3 py-2 text-sm whitespace-nowrap max-w-[160px] truncate"
-          >
-            {tab.title}
-          </button>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              closeTab(tab.articleId);
-            }}
-            className="px-1.5 py-1 text-muted-foreground hover:text-foreground hover:bg-accent rounded-sm mr-1 opacity-0 group-hover:opacity-100 transition-opacity text-xs shrink-0"
-          >
-            x
-          </button>
-        </div>
-      ))}
-    </div>
+    <header className="flex items-center gap-1.5 border-b bg-background shrink-0 h-11 px-2 shadow-sm">
+      <Button
+        variant="ghost"
+        size="icon-sm"
+        className="lg:hidden shrink-0"
+        onClick={() => setSidebarOpen(true)}
+      >
+        <Menu className="size-4" />
+      </Button>
+
+      <span className="text-sm font-semibold text-muted-foreground select-none shrink-0 px-1 hidden sm:block">
+        ReadingWise
+      </span>
+
+      <div className="flex items-center gap-1 overflow-x-auto flex-1 mx-1">
+        {openTabs.map((tab) => {
+          const isActive = tab.articleId === activeTabId;
+          return (
+            <div
+              key={tab.articleId}
+              className={`group flex items-center shrink-0 rounded-md text-xs font-medium transition-colors ${
+                isActive
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:bg-accent hover:text-foreground"
+              }`}
+            >
+              <button
+                onClick={() => setActiveTab(tab.articleId)}
+                className="px-2.5 py-1.5 whitespace-nowrap max-w-[140px] truncate cursor-pointer"
+              >
+                {tab.title}
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  closeTab(tab.articleId);
+                }}
+                className={`p-0.5 rounded-full mr-1 transition-colors ${
+                  isActive
+                    ? "hover:bg-primary-foreground/20 text-primary-foreground/70 hover:text-primary-foreground"
+                    : "hover:bg-destructive/15 text-muted-foreground/50 hover:text-destructive"
+                }`}
+              >
+                <X className="size-3" />
+              </button>
+            </div>
+          );
+        })}
+      </div>
+
+      <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
+        <SheetContent side="left" className="w-64 p-0">
+          <SheetTitle className="sr-only">Navigation</SheetTitle>
+          <Sidebar onArticleClick={() => setSidebarOpen(false)} />
+        </SheetContent>
+      </Sheet>
+    </header>
   );
 }
