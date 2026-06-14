@@ -84,7 +84,9 @@ export async function parseArticleFromRawInput(
           role: "system",
           content: `You parse unstructured IELTS Reading passages into a strict JSON format.
 
-The user will paste raw text that contains: a title, an English passage, and some IELTS Reading questions with answers. The input may be in ANY layout or format — you must intelligently extract and restructure it.
+The user will paste raw text that may contain: a title, an English passage, and optionally IELTS Reading questions with answers. The input may be in ANY layout or format — you must intelligently extract and restructure it.
+
+If the input contains NO questions or answers (just a reading passage), return an empty questions array: "questions": []
 
 Output a single JSON object with this schema:
 {
@@ -94,16 +96,18 @@ Output a single JSON object with this schema:
     {
       "type": "one of: multiple_choice, true_false_not_given, yes_no_not_given, matching_heading, matching_info, fill_in_blank, summary_completion, short_answer",
       "question": "the question text (without number prefix)",
-      "options": ["A) choice text", "B) ..."] or null for types that don't need options (true_false_not_given, yes_no_not_given, short_answer, fill_in_blank),
-      "answer": "the correct answer (just the letter for multiple_choice, the word/phrase for fill_in_blank/short_answer, TRUE/FALSE/NOT GIVEN for true_false_not_given, YES/NO/NOT GIVEN for yes_no_not_given, the Roman numeral or letter for matching)"
+      "options": "the answer choices as a string array, or null if the question type doesn't need options. For multiple_choice: ['A) choice text', 'B) ...']. For matching_heading: include the FULL list of Roman numeral headings from the source, e.g. ['i) Heading one', 'ii) Heading two', ...]. For matching_info: include the paragraph reference list, e.g. ['A) info text', 'B) ...']. For summary_completion: include the word bank list. For true_false_not_given, yes_no_not_given, short_answer, fill_in_blank: use null.",
+      "answer": "the correct answer (just the letter for multiple_choice, the word/phrase for fill_in_blank/short_answer, TRUE/FALSE/NOT GIVEN for true_false_not_given, YES/NO/NOT GIVEN for yes_no_not_given, the matching Roman numeral like 'i' or 'iv' for matching_heading, the matching paragraph letter for matching_info)"
     }
   ]
 }
 
 Rules:
-- Detect the question type from the format: ABCD options → multiple_choice; TRUE/FALSE/NOT GIVEN → true_false_not_given; YES/NO/NOT GIVEN → yes_no_not_given; i-ix headings → matching_heading; paragraph letters with info → matching_info; blanks (e.g. "... is a ___") → fill_in_blank; word limit (e.g. "NO MORE THAN TWO WORDS") → short_answer; summary with blanks → summary_completion
+- Detect the question type from the format: ABCD options → multiple_choice; TRUE/FALSE/NOT GIVEN → true_false_not_given; YES/NO/NOT GIVEN → yes_no_not_given; Roman numeral heading list (i, ii, iii...) → matching_heading; paragraph letters with info statements → matching_info; blanks (e.g. "... is a ___") → fill_in_blank; word limit (e.g. "NO MORE THAN TWO WORDS") → short_answer; summary with blanks → summary_completion
+- CRITICAL for matching_heading: ALWAYS extract and include the ENTIRE list of headings (Roman numerals i, ii, iii, iv, v, vi, vii, viii, ix, x etc.) in EVERY matching_heading question's "options" field. Each question shares the same heading list.
 - Separate the passage content from questions carefully — content goes in "content", questions go in "questions"
 - Preserve the passage text exactly as written
+- If the input has no questions or answer key, return an empty questions array: "questions": []
 - Respond ONLY with valid JSON, no markdown, no commentary`,
         },
         {

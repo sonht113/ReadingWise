@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db/client";
 import { articles } from "@/db/schema/articles";
 import { questions } from "@/db/schema/questions";
+import { translateFullArticle } from "@/lib/openrouter";
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,11 +16,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!Array.isArray(qs) || qs.length === 0) {
+    if (!Array.isArray(qs)) {
       return NextResponse.json(
-        { error: "questions array is required and must not be empty" },
+        { error: "questions must be an array" },
         { status: 400 },
       );
+    }
+
+    const hasQuestions = qs.length > 0;
+
+    let translatedContent: string | null = null;
+    if (!hasQuestions) {
+      try {
+        translatedContent = await translateFullArticle(content, title);
+      } catch {
+        // Store without translation, will still work in "original" mode
+      }
     }
 
     const [article] = await db
@@ -28,22 +40,26 @@ export async function POST(request: NextRequest) {
         collectionId,
         title: title.slice(0, 255),
         content,
+        translatedContent,
+        language: "en",
       })
       .returning();
 
     const createdQuestions = [];
-    for (const q of qs) {
-      const [question] = await db
-        .insert(questions)
-        .values({
-          articleId: article.id,
-          type: q.type,
-          question: q.question,
-          options: q.options ?? null,
-          answer: q.answer,
-        })
-        .returning();
-      createdQuestions.push(question);
+    if (hasQuestions) {
+      for (const q of qs) {
+        const [question] = await db
+          .insert(questions)
+          .values({
+            articleId: article.id,
+            type: q.type,
+            question: q.question,
+            options: q.options ?? null,
+            answer: q.answer,
+          })
+          .returning();
+        createdQuestions.push(question);
+      }
     }
 
     return NextResponse.json({ article, questions: createdQuestions }, { status: 201 });

@@ -89,7 +89,7 @@ export function CreateArticleDialog({
   };
 
   const handleCreate = async () => {
-    if (!collectionId || !editedTitle || !editedContent || editedQuestions.length === 0) return;
+    if (!collectionId || !editedTitle || !editedContent) return;
 
     setIsCreating(true);
     setError("");
@@ -296,7 +296,7 @@ export function CreateArticleDialog({
                 </Button>
                 <Button
                   onClick={handleCreate}
-                  disabled={!collectionId || !editedTitle || !editedContent || editedQuestions.length === 0 || isCreating}
+                  disabled={!collectionId || !editedTitle || !editedContent || isCreating}
                 >
                   {isCreating ? "Creating..." : "Create Article"}
                 </Button>
