@@ -145,7 +145,7 @@ export async function translateFullArticle(
   text: string,
   title?: string,
 ): Promise<{ translatedTitle: string; translatedContent: string }> {
-  const titleHint = title ? `The English title is: "${title}"` : "";
+  const titleHint = title ? `English title: "${title}"` : "No title provided";
 
   const response = await fetch(OPENROUTER_URL, {
     method: "POST",
@@ -159,11 +159,17 @@ export async function translateFullArticle(
         {
           role: "system",
           content:
-            "You are a Vietnamese-English translation assistant. Translate the given English passage title and content to natural Vietnamese. Keep paragraph structure and line breaks. Do NOT add commentary. Output ONLY valid JSON: {\"translatedTitle\": \"translated title\", \"translatedContent\": \"translated passage content\"}",
+            "You are a Vietnamese-English translation assistant. Given an English title and passage, output a JSON with both translated.\n" +
+            "Rules:\n" +
+            '- "translatedTitle": ONLY the Vietnamese translation of the title, nothing else\n' +
+            '- "translatedContent": ONLY the Vietnamese translation of the passage content. DO NOT include the translated title inside this field.\n' +
+            "- Keep paragraph structure and line breaks in translatedContent\n" +
+            "- Do NOT add any commentary, notes, or explanations\n" +
+            '- Output ONLY valid JSON: {"translatedTitle": "...", "translatedContent": "..."}',
         },
         {
           role: "user",
-          content: `${titleHint}\nTranslate this passage to Vietnamese:\n\n${text}`,
+          content: `${titleHint}\n\nPassage to translate:\n${text}`,
         },
       ],
       temperature: 0.3,

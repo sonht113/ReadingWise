@@ -69,12 +69,15 @@ export async function POST(request: NextRequest) {
 
     const title = parsed.title?.slice(0, 255) ?? "Untitled";
     const rawContent = parsed.textContent.trim();
+    const cleanContent = rawContent.startsWith(title)
+      ? rawContent.slice(title.length).replace(/^[\s\n]+/, "")
+      : rawContent;
 
     step = "translate";
     let translatedTitle: string | null = null;
     let translatedContent: string | null = null;
     try {
-      const result = await translateFullArticle(rawContent, title);
+      const result = await translateFullArticle(cleanContent, title);
       translatedTitle = result.translatedTitle || null;
       translatedContent = result.translatedContent;
     } catch {
