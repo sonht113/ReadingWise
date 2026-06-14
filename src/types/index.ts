@@ -25,6 +25,7 @@ export interface Article {
   title: string;
   content: string;
   sourceUrl?: string | null;
+  translatedTitle?: string | null;
   translatedContent?: string | null;
   language?: string | null;
   createdAt: string;

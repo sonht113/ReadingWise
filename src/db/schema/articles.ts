@@ -9,6 +9,7 @@ export const articles = pgTable("articles", {
   title: varchar("title", { length: 255 }).notNull(),
   content: text("content").notNull(),
   sourceUrl: varchar("source_url", { length: 2048 }),
+  translatedTitle: text("translated_title"),
   translatedContent: text("translated_content"),
   language: varchar("language", { length: 10 }).default("en"),
   createdAt: timestamp("created_at").defaultNow().notNull(),

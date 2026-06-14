@@ -26,7 +26,7 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
   const [createOpen, setCreateOpen] = useState(false);
   const { data: collections, isLoading } = useCollections();
   const selectedCollectionId = expandedId;
-  const { data: articles } = useArticles(selectedCollectionId);
+  const { data: articles, isLoading: isArticlesLoading } = useArticles(selectedCollectionId);
   const openArticle = useReaderStore((s) => s.openArticle);
   const closeTab = useReaderStore((s) => s.closeTab);
   const { user, signOut } = useUser();
@@ -80,36 +80,43 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
             </div>
             {expandedId === collection.id && (
               <div className="ml-3 mt-0.5 flex flex-col gap-0.5">
-                {articles?.length === 0 && (
+                {isArticlesLoading ? (
+                  <div className="space-y-1.5 px-1 py-1">
+                    <div className="h-3.5 bg-muted rounded animate-pulse w-3/4" />
+                    <div className="h-3.5 bg-muted rounded animate-pulse w-1/2" />
+                    <div className="h-3.5 bg-muted rounded animate-pulse w-2/3" />
+                  </div>
+                ) : articles?.length === 0 ? (
                   <p className="text-xs text-muted-foreground px-2 py-1">
                     No articles
                   </p>
+                ) : (
+                  articles?.map((article) => (
+                    <div key={article.id} className="flex items-center group">
+                      <button
+                        onClick={() =>
+                          handleArticleClick(article.id, article.title)
+                        }
+                        className="text-left px-2 py-1 rounded text-sm text-muted-foreground hover:bg-accent hover:text-foreground transition-colors truncate flex-1"
+                      >
+                        {article.title}
+                      </button>
+                      <button
+                        onClick={() =>
+                          setDeleteTarget({
+                            type: "article",
+                            id: article.id,
+                            name: article.title,
+                          })
+                        }
+                        className="p-1 rounded text-muted-foreground hover:text-destructive hover:bg-destructive/10 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                        title="Delete article"
+                      >
+                        <Trash2 className="size-3" />
+                      </button>
+                    </div>
+                  ))
                 )}
-                {articles?.map((article) => (
-                  <div key={article.id} className="flex items-center group">
-                    <button
-                      onClick={() =>
-                        handleArticleClick(article.id, article.title)
-                      }
-                      className="text-left px-2 py-1 rounded text-sm text-muted-foreground hover:bg-accent hover:text-foreground transition-colors truncate flex-1"
-                    >
-                      {article.title}
-                    </button>
-                    <button
-                      onClick={() =>
-                        setDeleteTarget({
-                          type: "article",
-                          id: article.id,
-                          name: article.title,
-                        })
-                      }
-                      className="p-1 rounded text-muted-foreground hover:text-destructive hover:bg-destructive/10 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                      title="Delete article"
-                    >
-                      <Trash2 className="size-3" />
-                    </button>
-                  </div>
-                ))}
               </div>
             )}
           </div>

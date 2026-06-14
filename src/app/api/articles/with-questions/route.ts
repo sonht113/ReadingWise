@@ -25,10 +25,13 @@ export async function POST(request: NextRequest) {
 
     const hasQuestions = qs.length > 0;
 
+    let translatedTitle: string | null = null;
     let translatedContent: string | null = null;
     if (!hasQuestions) {
       try {
-        translatedContent = await translateFullArticle(content, title);
+        const result = await translateFullArticle(content, title);
+        translatedTitle = result.translatedTitle || null;
+        translatedContent = result.translatedContent;
       } catch {
         // Store without translation, will still work in "original" mode
       }
@@ -40,6 +43,7 @@ export async function POST(request: NextRequest) {
         collectionId,
         title: title.slice(0, 255),
         content,
+        translatedTitle,
         translatedContent,
         language: "en",
       })

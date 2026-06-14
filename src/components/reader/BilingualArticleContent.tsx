@@ -24,9 +24,12 @@ function InterleavedView({
   const viParas = article.translatedContent?.split(/\n{2,}/) ?? [];
 
   return (
-    <div className="md:hidden space-y-4">
+    <div className="md:hidden space-y-1">
       {engParas.map((para, i) => (
-        <div key={i}>
+        <div
+          key={i}
+          className="py-3 border-b last:border-b-0 space-y-3"
+        >
           <div className="text-base leading-relaxed whitespace-pre-line select-text">
             <AnnotationLayer
               articleId={articleId}
@@ -37,9 +40,11 @@ function InterleavedView({
             />
           </div>
           {viParas[i] && (
-            <p className="text-sm leading-relaxed text-muted-foreground mt-2 whitespace-pre-line">
-              {viParas[i]}
-            </p>
+            <div className="pl-3 border-l-2 border-muted-foreground/20">
+              <p className="text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
+                {viParas[i]}
+              </p>
+            </div>
           )}
         </div>
       ))}

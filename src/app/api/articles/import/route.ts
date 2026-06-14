@@ -71,9 +71,12 @@ export async function POST(request: NextRequest) {
     const rawContent = parsed.textContent.trim();
 
     step = "translate";
+    let translatedTitle: string | null = null;
     let translatedContent: string | null = null;
     try {
-      translatedContent = await translateFullArticle(rawContent, title);
+      const result = await translateFullArticle(rawContent, title);
+      translatedTitle = result.translatedTitle || null;
+      translatedContent = result.translatedContent;
     } catch {
       // Store without translation, will still work in "original" mode
     }
@@ -86,6 +89,7 @@ export async function POST(request: NextRequest) {
         title,
         content: rawContent,
         sourceUrl: decodedUrl,
+        translatedTitle,
         translatedContent,
         language: "en",
       })

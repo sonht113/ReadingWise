@@ -144,8 +144,8 @@ Rules:
 export async function translateFullArticle(
   text: string,
   title?: string,
-): Promise<string> {
-  const titleHint = title ? `Title: "${title}"\n\n` : "";
+): Promise<{ translatedTitle: string; translatedContent: string }> {
+  const titleHint = title ? `The English title is: "${title}"` : "";
 
   const response = await fetch(OPENROUTER_URL, {
     method: "POST",
@@ -159,11 +159,11 @@ export async function translateFullArticle(
         {
           role: "system",
           content:
-            "You are a Vietnamese-English translation assistant. Translate the given English passage to natural Vietnamese. Keep the paragraph structure and line breaks. Do NOT add any commentary, notes, or explanations. Output ONLY the Vietnamese translation text.",
+            "You are a Vietnamese-English translation assistant. Translate the given English passage title and content to natural Vietnamese. Keep paragraph structure and line breaks. Do NOT add commentary. Output ONLY valid JSON: {\"translatedTitle\": \"translated title\", \"translatedContent\": \"translated passage content\"}",
         },
         {
           role: "user",
-          content: `${titleHint}Translate this passage to Vietnamese:\n\n${text}`,
+          content: `${titleHint}\nTranslate this passage to Vietnamese:\n\n${text}`,
         },
       ],
       temperature: 0.3,
@@ -176,5 +176,16 @@ export async function translateFullArticle(
   }
 
   const data = await response.json();
-  return data.choices[0]?.message?.content ?? "";
+  const content = data.choices[0]?.message?.content ?? "";
+
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  if (jsonMatch) {
+    const parsed = JSON.parse(jsonMatch[0]);
+    return {
+      translatedTitle: parsed.translatedTitle ?? "",
+      translatedContent: parsed.translatedContent ?? content,
+    };
+  }
+
+  return { translatedTitle: "", translatedContent: content };
 }

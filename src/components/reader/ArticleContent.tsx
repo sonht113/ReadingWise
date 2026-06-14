@@ -109,7 +109,12 @@ export function ArticleContent() {
   return (
     <div className="flex-1 overflow-y-auto">
       <article className="max-w-5xl mx-auto py-8 px-6">
-        <h1 className="text-2xl font-semibold mb-4">{article.title}</h1>
+        <h1 className="text-2xl font-semibold mb-2">{article.title}</h1>
+        {hasTranslation && article.translatedTitle && (
+          <p className="md:hidden text-base text-muted-foreground mb-4">
+            {article.translatedTitle}
+          </p>
+        )}
 
         {hasTranslation && (
           <div className="hidden md:flex gap-1 mb-6 border-b pb-4">
