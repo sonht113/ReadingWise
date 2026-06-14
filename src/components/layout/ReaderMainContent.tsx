@@ -7,6 +7,7 @@ import { NotesPanelDynamic } from "@/components/notes/NotesPanelDynamic";
 
 export function ReaderMainContent() {
   const notesOpen = useReaderStore((s) => s.notesOpen);
+  const toggleNotes = useReaderStore((s) => s.toggleNotes);
 
   return (
     <div className="flex-1 flex min-h-0">
@@ -14,7 +15,15 @@ export function ReaderMainContent() {
         <ArticleContent />
         <QuestionPanelWrapper />
       </div>
-      {notesOpen && <NotesPanelDynamic />}
+      {notesOpen && (
+        <>
+          <div
+            className="lg:hidden fixed inset-0 bg-black/50 z-40"
+            onClick={toggleNotes}
+          />
+          <NotesPanelDynamic />
+        </>
+      )}
     </div>
   );
 }

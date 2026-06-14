@@ -156,7 +156,7 @@ export function NotesPanel() {
   const { data: note, isLoading } = useArticleNote(activeTabId);
 
   return (
-    <div className="w-96 border-l bg-background flex flex-col shrink-0 h-full">
+    <div className="w-96 max-lg:fixed max-lg:inset-0 max-lg:z-50 max-lg:w-full bg-background flex flex-col shrink-0 h-full border-l">
       {isLoading ? (
         <div className="flex items-center justify-between px-4 py-2 border-b shrink-0">
           <h3 className="text-sm font-semibold">Notes</h3>

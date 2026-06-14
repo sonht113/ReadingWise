@@ -8,9 +8,8 @@ import { useUser } from "@/hooks/useUser";
 import { Button } from "@/components/ui/button";
 import { CollectionDialog } from "./CollectionDialog";
 import { ThemeToggle } from "./ThemeToggle";
-import { Trash2, Globe, FilePlus } from "lucide-react";
+import { Trash2, FilePlus } from "lucide-react";
 import { ConfirmDeleteDialog } from "@/components/ui/confirm-delete-dialog";
-import { ImportDialog } from "./ImportDialog";
 import { CreateArticleDialog } from "./CreateArticleDialog";
 
 interface SidebarProps {
@@ -24,7 +23,6 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
     id: string;
     name: string;
   } | null>(null);
-  const [importOpen, setImportOpen] = useState(false);
   const [createOpen, setCreateOpen] = useState(false);
   const { data: collections, isLoading } = useCollections();
   const selectedCollectionId = expandedId;
@@ -124,16 +122,6 @@ export function Sidebar({ onArticleClick }: SidebarProps) {
           </p>
         )}
         <CollectionDialog />
-        <Button
-          variant="outline"
-          size="sm"
-          className="w-full"
-          onClick={() => setImportOpen(true)}
-        >
-          <Globe className="mr-2 size-3.5" />
-          Import URL
-        </Button>
-        <ImportDialog open={importOpen} onOpenChange={setImportOpen} />
         <Button
           variant="outline"
           size="sm"
