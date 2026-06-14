@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Notebook } from "lucide-react";
 import { useReaderStore } from "@/stores/reader-store";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,6 +13,8 @@ import { Sidebar } from "@/components/layout/Sidebar";
 
 export function ArticleTabs() {
   const { openTabs, activeTabId, setActiveTab, closeTab } = useReaderStore();
+  const notesOpen = useReaderStore((s) => s.notesOpen);
+  const toggleNotes = useReaderStore((s) => s.toggleNotes);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   if (openTabs.length === 0) {
@@ -26,9 +28,20 @@ export function ArticleTabs() {
         >
           <Menu className="size-4" />
         </Button>
-        <span className="text-sm font-semibold text-muted-foreground select-none">
+        <span className="text-sm font-semibold text-muted-foreground select-none flex-1">
           ReadingWise
         </span>
+        <button
+          type="button"
+          onClick={toggleNotes}
+          className={`p-1.5 rounded-md transition-colors ${
+            notesOpen
+              ? "bg-primary text-primary-foreground"
+              : "text-muted-foreground hover:bg-accent hover:text-foreground"
+          }`}
+        >
+          <Notebook className="size-4" />
+        </button>
         <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
           <SheetContent side="left" className="w-64 p-0">
             <SheetTitle className="sr-only">Navigation</SheetTitle>
@@ -89,6 +102,18 @@ export function ArticleTabs() {
           );
         })}
       </div>
+
+        <button
+          type="button"
+          onClick={toggleNotes}
+          className={`p-1.5 rounded-md transition-colors shrink-0 ${
+            notesOpen
+              ? "bg-primary text-primary-foreground"
+              : "text-muted-foreground hover:bg-accent hover:text-foreground"
+          }`}
+        >
+          <Notebook className="size-4" />
+        </button>
 
       <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
         <SheetContent side="left" className="w-64 p-0">

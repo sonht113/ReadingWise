@@ -13,6 +13,7 @@ interface ReaderState {
   selectedCollectionId: string | null;
   questionsOpen: boolean;
   readingMode: ReadingMode;
+  notesOpen: boolean;
 
   setActiveTab: (articleId: string) => void;
   openArticle: (articleId: string, title: string) => void;
@@ -20,6 +21,7 @@ interface ReaderState {
   setSelectedCollection: (collectionId: string) => void;
   toggleQuestions: () => void;
   setReadingMode: (mode: ReadingMode) => void;
+  toggleNotes: () => void;
 }
 
 export const useReaderStore = create<ReaderState>((set, get) => ({
@@ -28,6 +30,7 @@ export const useReaderStore = create<ReaderState>((set, get) => ({
   selectedCollectionId: null,
   questionsOpen: false,
   readingMode: "original",
+  notesOpen: false,
 
   setActiveTab: (articleId) => set({ activeTabId: articleId }),
 
@@ -60,4 +63,6 @@ export const useReaderStore = create<ReaderState>((set, get) => ({
   toggleQuestions: () => set((s) => ({ questionsOpen: !s.questionsOpen })),
 
   setReadingMode: (mode) => set({ readingMode: mode }),
+
+  toggleNotes: () => set((s) => ({ notesOpen: !s.notesOpen })),
 }));
