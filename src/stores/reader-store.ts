@@ -5,7 +5,7 @@ interface ArticleTab {
   title: string;
 }
 
-export type ReadingMode = "original" | "side_by_side";
+export type ReadingMode = "original" | "side_by_side" | "translated";
 
 interface ReaderState {
   openTabs: ArticleTab[];

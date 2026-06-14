@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import { useReaderStore, type ReadingMode } from "@/stores/reader-store";
 import { useQuery } from "@tanstack/react-query";
 import { useSelection } from "@/hooks/useSelection";
@@ -32,6 +32,23 @@ export function ArticleContent() {
   const [tooltipRect, setTooltipRect] = useState<DOMRect | null>(null);
   const [drawerVocabId, setDrawerVocabId] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(max-width: 767px)").matches;
+  });
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile && readingMode === "side_by_side") {
+      setReadingMode("original");
+    }
+  }, [isMobile, readingMode, setReadingMode]);
 
   const { data: article, isLoading } = useQuery({
     queryKey: ["article", activeTabId],
@@ -101,10 +118,15 @@ export function ArticleContent() {
   const hasTranslation =
     !!article.translatedContent && article.translatedContent.length > 0;
 
-  const modeOptions: { value: ReadingMode; label: string }[] = [
-    { value: "original", label: "Original" },
-    { value: "side_by_side", label: "Side by Side" },
-  ];
+  const modeOptions: { value: ReadingMode; label: string }[] = isMobile
+    ? [
+        { value: "original", label: "Original" },
+        { value: "translated", label: "Translated" },
+      ]
+    : [
+        { value: "original", label: "Original" },
+        { value: "side_by_side", label: "Side by Side" },
+      ];
 
   return (
     <div className="flex-1 overflow-y-auto">

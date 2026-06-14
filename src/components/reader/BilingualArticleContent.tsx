@@ -24,6 +24,14 @@ export function BilingualArticleContent({
   const hasTranslation =
     !!article.translatedContent && article.translatedContent.length > 0;
 
+  if (mode === "translated" && hasTranslation) {
+    return (
+      <div className="text-base leading-relaxed whitespace-pre-line select-text text-muted-foreground">
+        {article.translatedContent}
+      </div>
+    );
+  }
+
   if (mode === "original" || !hasTranslation) {
     return (
       <div className="text-base leading-relaxed whitespace-pre-line select-text">
@@ -39,8 +47,8 @@ export function BilingualArticleContent({
   }
 
   return (
-    <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 md:gap-6 select-text">
-        <div className="text-base leading-relaxed whitespace-pre-line select-text max-md:border-b max-md:pb-4 md:border-r md:pr-4">
+    <div className="grid grid-cols-2 gap-6 select-text">
+        <div className="text-base leading-relaxed whitespace-pre-line select-text border-r pr-4">
           <AnnotationLayer
             articleId={articleId}
             content={article.content}
